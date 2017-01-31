@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<!-- head  -->
+<head>
+	<meta charset="UTF-8" />
+	<title>React.js TestPage</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script src="https://fb.me/react-0.13.2.js"></script>
+    <script src="https://fb.me/JSXTransformer-0.13.2.js"></script>
+</head>
+<!-- body -->
+<body>
+	<div id="example"></div>
+	<span id="tableDiv"></span>
+	<span id="tableDiv2"></span>
+	<script type="text/jsx" src="./js/func.js"></script>
+	<script type="text/jsx" src="./js/helloworld.js"></script>
+	<script type="text/jsx">
+	React.render(<TableComp />,document.getElementById('tableDiv'));
+	React.render(<Person2 data={personData} />,document.getElementById('tableDiv2'));
+	</script>
+</body>
+</html>
